@@ -1,17 +1,22 @@
 {
-    "name": "fzed51/domaine",
-    "description": "Mise en place d'un support pour l\u0000utilisation des domaines dans la programmation",
-    "type": "library",
-    "require-dev": {
-        "fzed51/run-test": "^1.9"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Fabien Sanchez",
-            "email": "fzed51+git@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "fzed51/domaine",
+  "description": "Mise en place d'un support pour l'utilisation des domaines dans la programmation",
+  "type": "library",
+  "require-dev": {
+    "fzed51/run-test": "^1.9"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabien Sanchez",
+      "email": "fzed51+git@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Domaine\\": "./src"
+    }
+  }
 }
