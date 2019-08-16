@@ -1,0 +1,91 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5d77c33f5b18236910f0c07b5ce15fd2",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "fzed51/console-options",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzed51/console-options.git",
+                "reference": "0049517b5b1bd96d5ffdc4daf89e40ae240559c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzed51/console-options/zipball/0049517b5b1bd96d5ffdc4daf89e40ae240559c9",
+                "reference": "0049517b5b1bd96d5ffdc4daf89e40ae240559c9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fzed51/run-test": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Console\\Options\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Sanchez",
+                    "email": "fzed51@users.noreply.github.com"
+                }
+            ],
+            "description": "option parser pour ligne de commande PHP",
+            "time": "2019-01-30T10:29:11+00:00"
+        },
+        {
+            "name": "fzed51/run-test",
+            "version": "v1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzed51/run-test.git",
+                "reference": "ca337f5965177620a451c0d83ad0384e0e235d53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzed51/run-test/zipball/ca337f5965177620a451c0d83ad0384e0e235d53",
+                "reference": "ca337f5965177620a451c0d83ad0384e0e235d53",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-xdebug": "*",
+                "fzed51/console-options": "^1",
+                "php": "^7.1"
+            },
+            "bin": [
+                "./bin/run-test"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Sanchez",
+                    "email": "fzed51@users.noreply.github.com"
+                }
+            ],
+            "description": "Outil de test unitaire",
+            "time": "2019-07-16T12:13:44+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
