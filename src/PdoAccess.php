@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 /**
  * User: Fabien Sanchez
@@ -47,7 +48,7 @@ trait PdoAccess
      * @return \stdClass|array|null
      * @throws \Exception
      */
-    protected function fetch(array $params)
+    protected function fetch(array $params = [])
     {
         $stm = $this->execute($params);
         $fetch = $stm->fetch($this->fetchType);
@@ -81,7 +82,7 @@ trait PdoAccess
         if (!$ok) {
             throw new \Exception(
                 "Impossible de d'exécuter une requête dans "
-                . static::class
+                    . static::class
             );
         }
         return $stm;
@@ -117,7 +118,7 @@ trait PdoAccess
             if ($stm === false) {
                 throw new \Exception(
                     "Impossible de d'initialiser une requête dans "
-                    . static::class
+                        . static::class
                 );
             }
             $this->pdoStatements[$ref] = $stm;
@@ -158,7 +159,7 @@ trait PdoAccess
      * @return array
      * @throws \Exception
      */
-    protected function fetchAll(array $params): array
+    protected function fetchAll(array $params = []): array
     {
         $stm = $this->execute($params);
         $fetchAll = $stm->fetchAll($this->fetchType);
